@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+    <title>Betty's Brownie Bakery</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero-image">
+            <div class="brownieLogo align-center">
+            <a href="#"><img src="img/bestbrownieslogo.png" height="300" width="300"/></a>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-sm navbar-transparent sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/smallbestbrownieslogo.png" height="50" width="50" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                        <a class="btn" role="button" id="reserveButton">
+                            <i class="fa fa-sign-in"></i> Order A Gift Box!
+                        </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="reserveModal" class="modal fade in" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-white">
+                    <h3 class="modal-title">Brownie Gift Box</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div><!--closing modal header-->
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form action="" id="reserveForm">
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="numCampers">Choose Your Flavors</label>
+                            <select class="form-control" name="numCampers" id="numCampers">
+                                <option selected value="#">Select...</option>
+                                <option value="1">Basic Chocolate</option>
+                                <option value="2">Apple Cinnamon</option>
+                                <option value="3">Walnuts</option>
+                                <option value="4">Pumpkin Cheesecake Swirl</option>
+                                <option value="5">Caramel</option>
+                                <option value="6">Berry Brownies</option>
+                            </select>
+                        </div><!--closing row form-group 1-->
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="date">When do you need them?</label>
+                            <div class="col-sm-6">
+                            <input class="form-control" type="date" id="date" name="date" placeholder="10/31/2021">
+                            </div> 
+                        </div> <!--closing row form-group 2-->
+                        <div class="row form-group">
+                            <div class="col-sm-6 col-form-label">
+                                <label for="Campsite Type"></label>
+                            </div>
+                            <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn active">
+                                <input type="radio" name="siteType" id="siteTent" autocomplete="off" value="tent" checked> Pickup
+                                </label>
+                                <label class="btn">
+                                <input type="radio" name="siteType" id="siteRV" autocomplete="off" value="RV" > Delivery
+                                </label>
+                            </div>
+                        </div><!--closing row form-group 3-->
+                        <div class="row form-group">
+                            <div class="col">
+                                <button class="btn btn-light" type="button" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-dark" type="submit">Submit</button>
+                            </div>
+                        </div><!--closing row form-group 4-->
+                    </form><!--closing form-->
+                </div><!--closing modal container-fluid-->
+            </div><!--closing modal body-->
+            </div><!--closing modal content-->
+        </div><!--closing modal document-->
+    </div><!--closing main modal div-->
+
+    
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-md-12 mx-auto">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                        <li data-target="#homeCarousel" data-slide-to="3"></li>
+                        <li data-target="#homeCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 h-100" src="img/assortmentbrownies.jpg" alt="Brownie Assortment" />
+                            <div class="carousel-caption">
+                                <h3>Birthday Brownies Better Than Cake</h3>
+                                <p class="d-none d-sm-block">You choose your favorite flavors, make some delectable decisions!</p>
+                            </div><!--closing for first carousel caption-->
+                        </div><!--closing for first carousel-item-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-100" src="img/nutsbrow.jpg" alt="Brownies with nuts" />
+                            <div class="carousel-caption">
+                                <h3>Go Nuts With Your Choices</h3>
+                                <p class="d-none d-sm-block">Not just walnuts, we got everything from tree nuts to legumes!</p>
+                            </div><!--closing for 2nd carousel caption-->
+                        </div><!--closing for 2nd carousel item-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-100" src="img/browniesplate.png" alt="Plate of brownies" />
+                            <div class="carousel-caption">
+                                <h3>Treat Yourself</h3>
+                                <p class="d-none d-sm-block">We got a 6 brownie minumum but we won't tell if you don't share!</p>
+                            </div><!--closing for 3rd carousel caption-->
+                        </div><!--closing for 3rd carousel item-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-100" src="img/chochipraspberrybrow.jpg" alt="Plate of brownies" />
+                            <div class="carousel-caption">
+                                <h3>Get Fruity with It</h3>
+                                <p class="d-none d-sm-block">Sweeten 'em up with Berry Brownies!</p>
+                            </div><!--closing for 4th carousel caption-->
+                        </div><!--closing for 4th carousel item-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-100" src="img/autumnbrownies.jpg" alt="Plate of brownies" />
+                            <div class="carousel-caption">
+                                <h3>It's Pumpkin Spice Season!</h3>
+                                <p class="d-none d-sm-block">Try our classic Pumpkin Spice or try our new Apple Cinnamon or Pumpkin Cheesecake Swirl Brownies!</p>
+                            </div><!--closing for 5th carousel caption-->
+                        </div><!--closing for 5th carousel item-->
+                    </div><!--closing for carousel inner-->
+                    <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                        <button class="btn btn-danger btn-sm" id="carouselButton">
+                            <i class="fa fa-pause"></i>
+                        </button>
+                </div><!--closing for id homeCarousel class carousel slide-->
+            </div><!--closing for col-md-8 mx-auto div class-->
+        </div><!--closing for class row-row content-->
+    </div>
+        
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+            		<ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                	<h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+18005555555"><i class="fa fa-phone"></i> 1-800-555-5555</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:chrystalgilbertdev@gmail.com"><i class="fa fa-envelope-o"></i> Email Us</a>
+                </div>                
+            </div>
+        </div>
+    </footer>
+
+      <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+      <!-- build:js js/main.js -->
+      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+      <!--endbuild-->
+  
+
+</body>
+
+</html>
