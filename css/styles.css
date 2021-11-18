@@ -18,7 +18,7 @@ header h2 {
 
 /* The hero image */
 .hero-image {
-	background-image: url("img/faintbrowniebanner.png");
+	background-image: url("/img/faintbrowniebanner.png");
 	/* The image used */
 	background-color: #cccccc;
 	/* Used if the image is unavailable */
