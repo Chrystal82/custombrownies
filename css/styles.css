@@ -1,0 +1,89 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Lobster", cursive;
+}
+
+h2 {
+	color: #5c350f;
+}
+
+header {
+	background-image: url("faint-brownie-banner.jpg");
+}
+
+header h2 {
+	color: #ffb2b7;
+}
+
+.brownieLogo {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.navbar {
+	background-color: #ffb2b7;
+}
+
+.site-footer {
+	background-image: linear-gradient(#ffb2b7, white);
+	padding: 20px 0;
+}
+
+.row-content {
+	padding: 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 200px;
+}
+
+.navbar-dark {
+	background-color: #b66e73;
+}
+
+a,
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#homeCarousel {
+	min-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.carousel-inner {
+	display: block;
+	object-fit: cover;
+	border: 5px solid #ffd6b2;
+}
+
+.carousel-caption {
+	background-color: rgba(211, 178, 178, 0.5);
+}
+
+#carouselButton {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+#reserveModal .modal-header {
+	background-color: #b66e73;
+	color: white;
+}
+
+.btn {
+	background-color: #b66e73;
+	color: white;
+}
+
+.btn:hover {
+	color: rgb(221, 169, 169);
+}
