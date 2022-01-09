@@ -24,7 +24,7 @@
 
     <header>
             <div class="brownieLogo">
-                <div class="col-sm-2">
+                <div class="col-sm-6">
                     <a href="#"><img src="img/bestbrownieslogo.png" height="300" width="300"/></a>
                 </div>
             </div>
@@ -33,10 +33,10 @@
     <nav class="navbar navbar-expand-sm navbar-transparent sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/smallbestbrownieslogo.png" height="50" width="50" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
+            <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav">
                     <!--<li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
@@ -62,13 +62,13 @@
                 <div class="container-fluid">
                     <form action="" id="reserveForm">
                         <div class="row form-group">
-                            <label class="col-sm-6 col-form-label" for="numCampers">Choose Your Flavors</label>
-                            <select class="form-control" name="numCampers" id="numCampers">
+                            <label class="col-sm-6 col-form-label" for="chooseFlavor">Choose Your Flavors</label>
+                            <select class="form-control" name="chooseFlavor" id="chooseFlavor">
                                 <option selected value="#">Select...</option>
                                 <option value="1">Basic Chocolate</option>
-                                <option value="2">Apple Cinnamon</option>
+                                <option value="2">Peanut Butter Swirl</option>
                                 <option value="3">Walnuts</option>
-                                <option value="4">Pumpkin Cheesecake Swirl</option>
+                                <option value="4">Peppermint Bark</option>
                                 <option value="5">Caramel</option>
                                 <option value="6">Berry Brownies</option>
                             </select>
@@ -81,14 +81,14 @@
                         </div> <!--closing row form-group 2-->
                         <div class="row form-group">
                             <div class="col-sm-6 col-form-label">
-                                <label for="Campsite Type"></label>
+                                <label for="Order Type"></label>
                             </div>
                             <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn active">
-                                <input type="radio" name="siteType" id="siteTent" autocomplete="off" value="tent" checked> Pickup
+                                <input type="radio" name="siteType" id="sitePickup" autocomplete="off" value="pickup" checked> Pickup
                                 </label>
                                 <label class="btn">
-                                <input type="radio" name="siteType" id="siteRV" autocomplete="off" value="RV" > Delivery
+                                <input type="radio" name="siteType" id="siteDelivery" autocomplete="off" value="delivery" > Delivery
                                 </label>
                             </div>
                         </div><!--closing row form-group 3-->
@@ -178,18 +178,17 @@
             		<ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>-->
-                <div class="col-6 col-sm-5 text-center">
+                <div class="col-5 col-sm-6 text-center">
                 	<h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
-                <div class="col-sm-4 text-center">
+                <div class="col-6 col-sm-4 text-center">
                     <a role="button" class="btn btn-link" href="tel:+18005555555"><i class="fa fa-phone"></i> 1-800-555-5555</a><br />
                     <a role="button" class="btn btn-link" href="mailto:chrystalgilbertdev@gmail.com"><i class="fa fa-envelope-o"></i> Email Us</a>
                 </div>                
