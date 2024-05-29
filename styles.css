@@ -1,5 +1,6 @@
 body {
 	font-family: "Open Sans", sans-serif;
+	background-color: #ffb2b7;
 }
 
 h1,
@@ -12,32 +13,18 @@ h2 {
 	color: #5c350f;
 }
 
+header {
+	background-image: url("faint-brownie-banner.jpg");
+}
+
 header h2 {
 	color: #ffb2b7;
 }
 
-/* The hero image */
-.hero-image {
-	background-image: url("/img/faintbrowniebanner.png");
-	/* The image used */
-	background-color: #cccccc;
-	/* Used if the image is unavailable */
-	height: 300px;
-	/* You must set a specified height */
-	background-position: center;
-	/* Center the image */
-	background-repeat: no-repeat;
-	/* Do not repeat the image */
-	background-size: cover;
-	/* Resize the background image to cover the entire container */
-}
-
 .brownieLogo {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	align-items: center;
+	margin: auto;
+	width: 100%;
+	text-align: center;
 }
 
 .navbar {
@@ -49,17 +36,6 @@ header h2 {
 	padding: 20px 0;
 }
 
-/*.jumbotron {
-  margin: 0;
-  padding: 30px;
-  background-image: linear-gradient(
-    to right,
-    $color-secondary,
-    $color-primary,
-    $color-dark
-  );
-  color: white;
-}*/
 .row-content {
 	padding: 50px 0;
 	border-bottom: 1px ridge;
@@ -72,7 +48,7 @@ header h2 {
 
 a,
 a:hover {
-	color: inherit;
+	color: white;
 	text-decoration: none;
 }
 
@@ -104,12 +80,11 @@ a:hover {
 	color: white;
 }
 
-#loginModal .modal-header {
-	background-color: #ffb2b7;
+.btn {
+	background-color: #b66e73;
 	color: white;
 }
 
-.btn {
-  background-color: #b66e73;
-  color: white;
+.btn:hover {
+	color: rgb(221, 169, 169);
 }
