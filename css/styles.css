@@ -1,7 +1,3 @@
-body {
-	font-family: "Open Sans", sans-serif;
-}
-
 h1,
 h2,
 h3 {
@@ -13,11 +9,16 @@ h2 {
 }
 
 header {
-	background-image: url("faint-brownie-banner.jpg");
+	background-image: url('/img/faint-brownie-banner.jpg');
 }
 
 header h2 {
 	color: #ffb2b7;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: rgb(247, 210, 227);
 }
 
 .brownieLogo {
@@ -82,8 +83,10 @@ a:hover {
 .btn {
 	background-color: #b66e73;
 	color: white;
+	margin: 0.5em;
 }
 
 .btn:hover {
 	color: rgb(221, 169, 169);
 }
+
